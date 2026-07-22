@@ -394,3 +394,162 @@ ul{ list-style: none; }
   transform: scale(1.02);
   filter: brightness(1);
 }
+
+/* ============================================================
+   PROFESSIONAL SOFTWARE ENGINEER DESIGN TOKENS
+   ============================================================ */
+:root {
+  /* Slate Dark Theme Palette */
+  --bg: #090D16;            /* Deep obsidian slate */
+  --panel: #111726;         /* Elevated card background */
+  --panel-alt: #182032;     /* Secondary panel/hover background */
+  --border: #1E293B;        /* Muted border color */
+  --border-glow: #334155;   /* Active/hover border glow */
+  
+  /* Typography Colors */
+  --text: #F8FAFC;          /* High contrast primary text */
+  --text-dim: #94A3B8;      /* Secondary text */
+  --text-faint: #64748B;    /* Faint/label text */
+  
+  /* Brand Accents */
+  --accent: #38BDF8;        /* Professional Sky Cyan */
+  --accent-glow: rgba(56, 189, 248, 0.15);
+  --accent-amber: #F59E0B;  /* Highlight amber */
+  --accent-purple: #A855F7; /* Secondary accent */
+  
+  /* Layout & Fonts */
+  --radius: 10px;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --sidebar-w: 260px;
+  --statusbar-h: 36px;
+}
+
+/* Base Adjustments */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.04) 0px, transparent 50%);
+}
+
+/* Clean Professional Card Styling */
+.card, .project-card, .repo, .review {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover, .project-card:hover, .repo:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 30px -4px var(--accent-glow);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   CONTACT SECTION CLEANUP
+   ============================================================ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-description {
+  color: var(--text-dim);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Styled Interactive Contact Cards */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  background: var(--panel-alt);
+  transform: translateX(4px);
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+/* Form Spacing Adjustments */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form label {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--accent);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 0.93rem;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15);
+}
