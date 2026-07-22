@@ -22,6 +22,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const bootLines = [
   { prompt: '$ whoami', result: 'areej-maher' },
   { prompt: '$ cat role.txt', result: 'Full-Stack Software Engineer — Laravel & Node.js' },
+  { prompt: '$ cat stack.json', result: '["PHP", "Laravel", "Node.js", "MySQL", "Svelte"]' },
   { prompt: '$ status --check', result: 'available for work ●' },
 ];
 
