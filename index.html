@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areej Maher — Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer portfolio — projects, experience, and skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP STATUS BAR (IDE chrome) ============ -->
+<div class="statusbar">
+  <div class="statusbar-left">
+    <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+    <span class="statusbar-path">areej-maher — portfolio — main</span>
+  </div>
+  <div class="statusbar-right">
+    <span id="clock">00:00:00</span>
+    <span class="sep">|</span>
+    <span>UTF-8</span>
+    <span class="sep">|</span>
+    <span class="status-live"><span class="pulse"></span>available for work</span>
+  </div>
+</div>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR NAV (file explorer) ============ -->
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">EXPLORER</div>
+    <ul class="file-tree">
+      <li><a href="#cover" class="file-link active" data-target="cover"><span class="file-icon">◆</span>cover.tsx</a></li>
+      <li><a href="#about" class="file-link" data-target="about"><span class="file-icon">◆</span>about.md</a></li>
+      <li><a href="#education" class="file-link" data-target="education"><span class="file-icon">◆</span>education.yaml</a></li>
+      <li><a href="#skills" class="file-link" data-target="skills"><span class="file-icon">◆</span>package.json</a></li>
+      <li><a href="#experience" class="file-link" data-target="experience"><span class="file-icon">◆</span>experience.log</a></li>
+      <li><a href="#services" class="file-link" data-target="services"><span class="file-icon">◆</span>services.ts</a></li>
+      <li><a href="#projects" class="file-link" data-target="projects"><span class="file-icon">◆</span>projects/</a></li>
+      <li><a href="#achievements" class="file-link" data-target="achievements"><span class="file-icon">◆</span>achievements.json</a></li>
+      <li><a href="#testimonials" class="file-link" data-target="testimonials"><span class="file-icon">◆</span>reviews.txt</a></li>
+      <li><a href="#contact" class="file-link" data-target="contact"><span class="file-icon">◆</span>contact.sh</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:hello@jordanellis.dev">Email</a>
+    </div>
+  </nav>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
+
+    <!-- COVER -->
+    <section id="cover" class="section cover">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          <span class="terminal-title">zsh — jordan@portfolio</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <!-- lines injected by script.js as typing animation -->
+        </div>
+      </div>
+      <div class="cover-meta">
+        <h1 class="cover-name">Areej Maher</h1>
+        <p class="cover-role">Full-Stack Software Engineer <span class="divider">/</span> React &amp; Node</p>
+        <div class="cover-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">scroll<span>↓</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <p class="eyebrow">// about.md</p>
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+            <div class="profile-avatar-container">
+                <img src="profile.jpg" alt="Areej Maher" class="profile-img">
+            </div>
+            <p>I'm a full-stack software engineer with a strong foundation in building scalable back-end architectures and interactive front-end web applications. I bridge backend logic written in <strong>Laravel</strong> and <strong>Node.js</strong> with clean, responsive user interfaces.</p>
+            <p>My workflow focuses on writing maintainable code, designing clean relational databases (<strong>MySQL</strong>), and engineering reliable, real-time web solutions.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-label">Location</span><span class="fact-value">Remote / Cairo, EG</span></div>
+          <div class="fact"><span class="fact-label">Experience</span><span class="fact-value">5+ years</span></div>
+          <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Web apps &amp; APIs</span></div>
+          <div class="fact"><span class="fact-label">Currently</span><span class="fact-value">Open to new roles</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <p class="eyebrow">// education.yaml</p>
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022 — Present</div>
+          <div class="timeline-body">
+            <h3>B.Sc. in Engineering</h3>
+            <p class="timeline-org">Alexandria University</p>
+            <p>Specializing in software systems, power engineering, and control system algorithms.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-body">
+            <h3>Certified Cloud Practitioner</h3>
+            <p class="timeline-org">Amazon Web Services</p>
+            <p>Core AWS services, security, pricing, and architecture fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <p class="eyebrow">// package.json</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>"dependencies": frontend</h3>
+          <div class="tags">
+            <span class="tag">svelte</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>"dependencies": backend</h3>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">mysql</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>"devDependencies": tooling</h3>
+          <div class="tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Postman</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <p class="eyebrow">// experience.log</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="commits">
+        <div class="commit">
+          <div class="commit-hash">2024 — 2025</div>
+          <div class="commit-body">
+            <h3>Software Engineer <span class="commit-branch">@ MIA Robotics Team</span></h3>
+            <ul>
+              <li>Built an Gui for monitoring and controling our robot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <p class="eyebrow">// services.ts</p>
+      <h2 class="section-title">Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web App Development</h3>
+          <p>End-to-end builds — from data model to deployed UI — using React, Node, and PostgreSQL.</p>
+        </div>
+        <div class="card">
+          <h3>API Design &amp; Integration</h3>
+          <p>REST and GraphQL APIs, third-party integrations (payments, auth, email), and API hardening.</p>
+        </div>
+        <div class="card">
+          <h3>Performance &amp; Audits</h3>
+          <p>Diagnosing slow pages and queries, then fixing the actual bottleneck instead of guessing.</p>
+        </div>
+        <div class="card">
+          <h3>Technical Consulting</h3>
+          <p>Architecture reviews and stack decisions for early-stage teams that need a second opinion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+  <p class="eyebrow">// projects/</p>
+  <h2 class="section-title">Projects</h2>
+  <div class="project-cards">
+
+    <!-- PROJECT 1 -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">Language Island</h3>
+        <span class="repo-visibility">Public / Full-Stack App</span>
+      </div>
+      <div class="project-details">
+        <p><strong>Goal:</strong> Build an interactive, gamified language-learning platform with dynamic content delivery and real-time user feedback.</p>
+        <p><strong>Role:</strong> Lead Full-Stack Developer.</p>
+        <p><strong>Method:</strong> Architected normalized <strong>MySQL database schemas</strong> to manage user authentication, progress state, dynamic shop inventories, and relational transactions; integrated with a Laravel/Node.js backend.</p>
+        <p><strong>Result:</strong> Successfully delivered a smooth, stateful learning interface with seamless audio playback and automated scoring.</p>
+      </div>
+      <div class="repo-tags">
+        <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Audio API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Language-Island/Catto-Platform" target="_blank" rel="noopener">GitHub Repo →</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">Life OS</h3>
+        <span class="repo-visibility">Web App</span>
+      </div>
+      <div class="project-details">
+        <p><strong>Goal:</strong> Provide a unified web dashboard for personal habit tracking, scheduling, and reading lists</p>
+        <p><strong>Role:</strong> Full-Stack Engineer</p>
+        <p><strong>Method:</strong> Designed a responsive Node.js/Express backend with flexible JSON database storage and clean RESTful endpoint structure.</p>
+        <p><strong>Result:</strong> Created a daily workspace tool with fast response times and offline capability</p>
+      </div>
+      <div class="repo-tags">
+        <span>Node.js</span><span>Express</span><span>JavaScript</span><span>REST API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/your-username/productivity-hub" target="_blank" rel="noopener">GitHub Repo →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <p class="eyebrow">// achievements.json</p>
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement">
+          <span class="achievement-icon">★</span>
+          <div>
+            <h3>Competitive Robotics Team Developer</h3>
+            <p>Programmed embedded node algorithms and autonomous locomotion for robotic platforms.</p>
+          </div>
+        </div>
+        <div class="achievement">
+          <span class="achievement-icon">★</span>
+          <div>
+            <h3>Open Source & Full-Stack Projects</h3>
+            <p>Engineered public web repositories utilizing modular PHP and Node architectures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <p class="eyebrow">// reviews.txt</p>
+      <h2 class="section-title">Testimonials</h2>
+      <div class="reviews">
+        <div class="review">
+            <p>"Areej consistently delivers well-structured full-stack features with special attention to back-end architecture and clean DB setup."</p>
+            <div class="review-author">
+            <span class="avatar">YA</span>
+            <div><strong>Yassmin Ahmed</strong><span>Software Project Collaborator</span></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">// contact.sh</p>
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Have a project in mind or a role to fill? Send a message — I read everything and reply within a couple of days.</p>
+          <div class="contact-links">
+            <a href="mailto:hello@jordanellis.dev">areejmaher57@gmail.com</a>
+            <a href="#">https://github.com/AreejMaher</a>
+            <a href="#">https://www.linkedin.com/in/areej-maher-377907307/</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">$ name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+          <label for="email">$ email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+          <label for="message">$ message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="What are you building?"></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Built by Areej Maher — © <span id="year"></span></p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
