@@ -82,12 +82,11 @@
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <p class="eyebrow">// about.md</p>
       <h2 class="section-title">About</h2>
       <div class="about-grid">
         <div class="about-text">
             <div class="profile-avatar-container">
-                <img src="profile.jpg" alt="Areej Maher" class="profile-img">
+                <img src="images/profile.jpg" alt="Areej Maher" class="profile-img">
             </div>
             <p>I'm a full-stack software engineer with a strong foundation in building scalable back-end architectures and interactive front-end web applications. I bridge backend logic written in <strong>Laravel</strong> and <strong>Node.js</strong> with clean, responsive user interfaces.</p>
             <p>My workflow focuses on writing maintainable code, designing clean relational databases (<strong>MySQL</strong>), and engineering reliable, real-time web solutions.</p>
@@ -103,7 +102,6 @@
 
     <!-- EDUCATION -->
     <section id="education" class="section">
-      <p class="eyebrow">// education.yaml</p>
       <h2 class="section-title">Education</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -122,12 +120,19 @@
             <p>Core AWS services, security, pricing, and architecture fundamentals.</p>
           </div>
         </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-body">
+                <h3>Full-Stack Web Development Track</h3>
+                <p class="timeline-org">National Telecommunication Institute (NTI)</p>
+                <p>Hands-on practical training covering full-stack architecture, relational database design (MySQL), and backend development with PHP/Laravel and Node.js[cite: 1].</p>
+            </div>
+        </div>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <p class="eyebrow">// package.json</p>
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <div class="skill-group">
@@ -158,7 +163,6 @@
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
-      <p class="eyebrow">// experience.log</p>
       <h2 class="section-title">Work Experience</h2>
       <div class="commits">
         <div class="commit">
@@ -175,7 +179,6 @@
 
     <!-- SERVICES -->
     <section id="services" class="section">
-      <p class="eyebrow">// services.ts</p>
       <h2 class="section-title">Services</h2>
       <div class="cards">
         <div class="card">
@@ -198,16 +201,42 @@
     </section>
 
     <section id="projects" class="section">
-  <p class="eyebrow">// projects/</p>
   <h2 class="section-title">Projects</h2>
   <div class="project-cards">
 
-    <!-- PROJECT 1 -->
+    <!-- PROJECT 1: ROBOTICS GUI -->
+    <article class="project-card">
+      <div class="project-head">
+        <h3 class="project-title">ROS 2 Teleop & PID Tuning Dashboard</h3>
+        <span class="repo-visibility">Public / Robotics GUI</span>
+      </div>
+
+      <div class="project-details">
+        <p><strong>Goal:</strong> Develop a real-time web interface for remotely controlling mobile robot locomotion, monitoring sensor streams, and tuning PID motor parameters on the fly.</p>
+        <p><strong>Role:</strong> Software &amp; GUI Developer (MIA Robotics Team).</p>
+        <p><strong>Method:</strong> Built a lightweight dashboard using <strong>Svelte</strong> connected via <strong>rosbridge WebSocket protocols</strong> to interface directly with ROS 2 nodes; implemented live plotting libraries to visualize sensor feedback and PID error curves in real time.</p>
+        <p><strong>Result:</strong> Reduced PID tuning iteration time and enabled low-latency teleoperation and telemetry tracking during robot operational tests.</p>
+      </div>
+      <div class="repo-tags">
+        <span>Svelte</span><span>rosbridge</span><span>WebSocket</span><span>ROS 2</span><span>JavaScript</span><span>Plotly.js / Chart.js</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/AreejMaher/ros-robot-control-gui" target="_blank" rel="noopener">GitHub Repo →</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: LANGUAGE ISLAND -->
     <article class="project-card">
       <div class="project-head">
         <h3 class="project-title">Language Island</h3>
         <span class="repo-visibility">Public / Full-Stack App</span>
       </div>
+
+      <!-- PROJECT IMAGE ADDED HERE -->
+      <div class="project-preview">
+        <img src="images/language-island.png" alt="Language Island Application Screenshot" class="project-img">
+      </div>
+
       <div class="project-details">
         <p><strong>Goal:</strong> Build an interactive, gamified language-learning platform with dynamic content delivery and real-time user feedback.</p>
         <p><strong>Role:</strong> Lead Full-Stack Developer.</p>
@@ -222,12 +251,17 @@
       </div>
     </article>
 
-    <!-- PROJECT 2 -->
+    <!-- PROJECT 3 -->
     <article class="project-card">
       <div class="project-head">
         <h3 class="project-title">Life OS</h3>
         <span class="repo-visibility">Web App</span>
       </div>
+
+      <div class="project-preview">
+        <img src="images/LifeOS.png" alt="Language Island Application Screenshot" class="project-img">
+      </div>
+
       <div class="project-details">
         <p><strong>Goal:</strong> Provide a unified web dashboard for personal habit tracking, scheduling, and reading lists</p>
         <p><strong>Role:</strong> Full-Stack Engineer</p>
@@ -247,7 +281,6 @@
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements" class="section">
-      <p class="eyebrow">// achievements.json</p>
       <h2 class="section-title">Achievements</h2>
       <div class="achievements-list">
         <div class="achievement">
@@ -269,7 +302,6 @@
 
     <!-- TESTIMONIALS -->
     <section id="testimonials" class="section">
-      <p class="eyebrow">// reviews.txt</p>
       <h2 class="section-title">Testimonials</h2>
       <div class="reviews">
         <div class="review">
@@ -284,7 +316,6 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section contact-section">
-      <p class="eyebrow">// contact.sh</p>
       <h2 class="section-title">Contact</h2>
       <div class="contact-grid">
         <div class="contact-info">
